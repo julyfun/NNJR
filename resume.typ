@@ -10,7 +10,7 @@
 
 #header(
   name: "Fang Junjie",
-  phone: "15356160627",
+  phone: "(+86) 15356160627",
   email: "julyfun.collect@outlook.com",
   site: "github.com/julyfun",
 )
@@ -35,22 +35,23 @@
   [参与分布式系统的数据库基建，使用 Docker 部署数据处理系统，撰写文档]
 )
 #exp_item(
-  role: "机器人视觉部部长",
-  name: "上海交通大学, 交龙机器人战队",
-  location: "上海市",
-  date: "2021年9月 - 2023年8月",
-  [无官方平台，自主构建目标追踪系统，实现对敌方机器人的全自动发弹打击（自瞄挂），识别器魔改自 Yolov5，预测器使用 OpenCV, Eigen 和 Ceres 手搓 C++17 代码，在比赛中的优势是独创使用扩展卡尔曼滤波器构建了敌方机器人的运动方程，以及构造了良好解耦的打击策略代码和创新的#link("https://sjtu-robomaster-team.github.io/antitop/")[弹道闭环算法]，在2023年 RoboMaster 全国赛中，本战队依赖该自瞄系统获得了所有队伍中的最高命中率（官方统计），并在大疆青年工程师大会上#link("https://www.bilibili.com/video/BV1vX4y1W7U7")[展示]，#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[项目开源分支]在 GitHub 上获得 300+ stars。个人代码量 $>= 20000$ 行，运行平台为 AGX，同时探索了 GitHub 工作流的正确使用方式，该项目正在迁移到 ROS2 平台上],
-  [进行 MiniPC，陀螺仪板、工业相机等视觉硬件的连接、驱动、标定和调试],
-  [撰写详细的#link("https://sjtu-robomaster-team.github.io")[视觉文档和教程]，严格选拔和培训视觉部新队员]
-)
-#exp_item(
-  role: "信息学竞赛教练",
+  role: "信息学竞赛主教练",
   name: "上海交通大学附属中学闵行分校",
   location: "上海市",
   date: "2022年10月 - 至今",
   [自行设计和讲授从零基础到提高组的#link("https://docs.qq.com/sheet/DWHF6clRmQmlKUUFw")[信奥培训课程]],
-  [定期组织 NOIP 模拟赛，撰写的#link("https://www.luogu.com.cn/article/8ijh5m4r")[算法题解]在洛谷获得了共 6000+ 点赞和 1200+ 评论],
+  [定期组织 NOIP 模拟赛，撰写的#link("https://www.luogu.com.cn/article/8ijh5m4r")[算法题解]在洛谷共获得了 6000+ 点赞和 1200+ 评论],
   [带队参加 2023年 CSP-S 和 NOIP，从零基础开始学起的队员获得了多个提高组省级二等奖]
+)
+#exp_item(
+  role: "机器人视觉部部长",
+  name: "上海交通大学, 交龙机器人战队",
+  location: "上海市",
+  date: "2021年9月 - 2023年8月",
+  [无官方平台，自主构建目标追踪系统，实现对敌方机器人的全自动发弹打击（自瞄挂），识别器魔改自 Yolov5，预测器使用 OpenCV, Eigen 和 Ceres 手搓 C++17 代码，在比赛中的优势是独创使用扩展卡尔曼滤波器构建了敌方机器人的运动方程，以及构造了良好解耦的打击策略代码和#link("https://sjtu-robomaster-team.github.io/antitop/")[弹道闭环算法]，在2023年 RoboMaster 全国赛中，本战队依赖该自瞄系统获得了所有队伍中的最高命中率（官方统计），并在大疆青年工程师大会上#link("https://www.bilibili.com/video/BV1vX4y1W7U7")[展示]，#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[项目开源分支]在 GitHub 上获得 300+ stars。个人代码量 $>= 20000$ 行，运行平台为 AGX，同时探索了 GitHub 工作流的正确使用方式，以及迁移到 ROS2 平台的方法],
+  [基于 Pybind11 和 Flask 构建了简单的前端可视化界面],
+  [进行 MiniPC、陀螺仪板、工业相机和双目相机等视觉硬件的连接、驱动、标定和调试，与电控部研发的嵌入式开发板进行通信],
+  [撰写详细的#link("https://sjtu-robomaster-team.github.io")[视觉文档和教程]，严格选拔和培训视觉部新队员]
 )
 
 #resume_heading("项目经历")
@@ -95,8 +96,7 @@
   name: [#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[rm.cv.std]],
   skills: "C++, Python, Cuda, Docker, ROS, OpenCV, Flask",
   date: "2021年9月 - 至今",
-  [在 RoboMaster 比赛中使用的自瞄系统],
-  [开源分支 CVRM2021-sjtu 在 GitHub 上获得 300+ stars]
+  [在 RoboMaster 比赛中使用的自瞄系统，是战队夺得2023年全国赛总冠军的重要技术之一],
 )
 
 #resume_heading("荣誉和获奖")
@@ -131,20 +131,16 @@
   date: "2018年11月"
 )
 
-#resume_heading("Technical Skills")
+#resume_heading("技能")
 #skill_item(
-  category: "Languages",
-  skills: "Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R"
+  category: "编程语言",
+  skills: "C++, Python, C, Rust 较为熟练; SQL (Postgres), JavaScript, Java, Matlab 写过一些课程 Lab 或玩具项目"
 )
 #skill_item(
-  category: "Frameworks",
-  skills: "React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI"
+  category: "框架和库",
+  skills: "ROS 1 & 2, OpenCV, Taichi, Unity, Cuda 使用较多, Pytorch, Tensorrt, React, Vue, Node.js, Bun, Flask, FastAPI, MinIO, MongoDB 有所涉猎"
 )
 #skill_item(
-  category: "Developer Tools",
-  skills: "Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse"
-)
-#skill_item(
-  category: "Libraries",
-  skills: "pandas, NumPy, Matplotlib"
+  category: "开发者工具",
+  skills: "Git, Docker, Github CI, Neovim"
 )
