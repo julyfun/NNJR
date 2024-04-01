@@ -34,7 +34,6 @@
       #name_header(name) \
       #phone |
       #link("mailto:" + email)[#email] |
-      #link("https://" + linkedin)[#linkedin] |
       #link("https://" + site)[#site]
     ]
   )
@@ -42,11 +41,11 @@
 }
 
 #let resume_heading(txt) = {
-  show heading: set text(size: 0.92em, weight: "regular")
+  show heading: set text(size: 0.94em)
 
   block[
     = #smallcaps(txt)
-    #v(-4pt)
+    #v(-2pt)
     #line(length: 100%, stroke: 1pt + black)
   ]
 }
@@ -87,7 +86,7 @@
           _#name _
         ],
         align(right)[
-          #date \
+          _#date _ \
           _#location _
         ]
       )
@@ -103,7 +102,7 @@
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, box[
-    *#name* | _#skills _ #h(1fr) #date
+    *#name* | _#skills _ #h(1fr) _#date _
     #list(..points)
   ])
 }
@@ -115,4 +114,21 @@
   set block(above: 0.7em)
   set text(size: 0.91em)
   pad(left: 1em, right: 0.5em, block[*#category*: #skills])
+}
+
+#let award_item(
+  name: "Sample University", 
+  price: "Gold Medal",
+  date: "Aug. 1600 - May 1750"
+) = {
+  set block(above: 0.7em, below: 1em)
+  pad(left: 1em, right: 0.5em, grid(
+    columns: (3fr, 1fr),
+    align(left)[
+     #name *#price*
+    ],
+    align(right)[
+      _#date _
+    ]
+  ))
 }

@@ -1,1 +1,5 @@
-*.pdf
+.vscode
+.DS_Store
+.nvimlog
+*.swp
+
