@@ -29,7 +29,7 @@
   name: "上海交通大学, 元知机器人研究院",
   location: "上海市",
   date: "2023年10月 - 至今",
-  [用 Taichi 语言编写#link("https://github.com/julyfun/PlasticBag")[MPM 塑料袋物理仿真]，准备部署并用于 Garment manipulation model 的基准测试。仿真领域当前并没有塑料袋这种材料的相关研究，而结合 APIC 和褶皱模型的算法能让塑料袋呈现出其特殊的弹塑性和不规律的折痕],
+  [用 Taichi 语言编写#link("https://github.com/julyfun/PlasticBag")[MPM 塑料袋物理仿真]，准备部署并用于 Garment manipulation model 的基准测试。仿真领域当前并没有塑料袋这种材料的相关研究，因此本人结合了 APIC 算法和褶皱模型，能让塑料袋呈现出其特殊的弹塑性和不规律的折痕],
   [魔改 #link("https://clothfunnels.cs.columbia.edu/")[Cloth Funnels] （斯坦福的 Garment manipulation model）的输入输出层，并使得实验室的 Manipulation 框架能够轻松适配该项目],
   [学会批量搭建 Docker + MinIO + MongoDB + RabbitMQ 分布式数据库框架，以使大量不同机器生产的数据集得到统一管理],
 )
@@ -42,7 +42,7 @@
   location: "上海市",
   date: "2021年9月 - 2023年8月",
   [无官方平台，自主构建目标追踪系统，实现对敌方机器人的全自动发弹打击（自瞄挂），识别器魔改自 Yolov5，预测器使用 OpenCV, Eigen 和 Ceres 手搓 C++17 代码，在比赛中的优势是独创使用扩展卡尔曼滤波器构建了敌方机器人的运动方程，以及构造了良好解耦的打击策略代码和#link("https://sjtu-robomaster-team.github.io/antitop/")[弹道闭环算法]，在2023年 RoboMaster 全国赛中，本战队依赖该自瞄系统获得了所有高校队伍中的最高命中率（官方统计），并在大疆青年工程师大会上#link("https://www.bilibili.com/video/BV1vX4y1W7U7")[展示]，#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[项目开源分支]在 GitHub 上获得 300+ stars。个人代码量 $>= 20000$ 行],
-  [进行 MiniPC、陀螺仪板、工业相机和双目相机等视觉硬件的线路设计、驱动、标定和调试，经数次迭代，硬件系统在频繁冲撞的赛场上性能稳定，不掉线],
+  [进行 MiniPC、陀螺仪板、工业相机和双目相机等视觉硬件的走线、驱动、标定和调试，重新设计选型和线路 + 优化 Debugger，让硬件系统在频繁冲撞的赛场上性能稳定，不掉线],
   [开发详细的#link("https://sjtu-robomaster-team.github.io")[机器视觉教程]，该系列教程有数万浏览量，且经常在比赛圈子内被引用]
 )
 #exp_item(
@@ -89,13 +89,13 @@
   skills: "C#, Unity ~3k loc.",
   date: "2023年10月 - 2023年12月",
   [实现基于隐式积分和 PBD 两种算法的布料仿真，隐式积分的 Chebyshev 加速及 Unity 调参方式优化，使用了数值微分的方法求解 SDF 的法向，实现 StVK 的 FEM 显式积分仿真，面向各向同性材料的特化算法 ],
-  [在课程要求之外，采用步进法检测鼠标与 SDF 几何体之间的碰撞并支持物体交互，#link("https://github.com/julyfun/games103-lab2")[仓库]和#link("https://www.bilibili.com/video/BV1Zw411n7eA")[演示链接]，以及基于三角元的碰撞检测和处理，按照八叉树形式划分空间，大幅优化了碰撞检测效率]
+  [在课程要求之外，采用步进法检测鼠标与 SDF 几何体之间的碰撞并支持物体交互，#link("https://github.com/julyfun/games103-lab2")[仓库]和#link("https://www.bilibili.com/video/BV1Zw411n7eA")[演示链接]，以及基于三角元的碰撞检测和处理，引入八叉树算法划分空间，大幅优化了碰撞检测效率]
 )
 #project_item(
   name: [#link("https://github.com/julyfun/ics-pa")[ics-pa]],
   skills: "C ~2k loc.",
   date: "2023年6月 - 2023年7月",
-  [南京大学操作系统课程 PA，使用纯 C 语言模拟简单图灵机的 CPU、内存、x86_64 寄存器、PC、加法器，熟悉调试器解析命令，单步执行，扫描寄存器和内存的源码，并在调试器中添加词法分析、表达式求值和监视点功能]
+  [南京大学操作系统课程 PA，编写模拟图灵机的 CPU、内存、x86_64 寄存器、PC、加法器，熟悉调试器解析命令，单步执行，扫描寄存器和内存的源码，并在调试器中添加词法分析、表达式求值和监视点功能]
 )
 // #project_item(
 //   name: [#link("https://github.com/julyfun/d2l-ai")[d2l-ai]],
