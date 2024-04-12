@@ -111,8 +111,8 @@
   category: "Skills",
   skills: "Balling, Yoga, Valorant",
 ) = {
-  set block(above: 0.7em)
-  set text(size: 0.91em)
+  set block(above: 0.79em)
+  set text(size: 1.00em)
   pad(left: 1em, right: 0.5em, block[*#category*: #skills])
 }
 
