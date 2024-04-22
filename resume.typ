@@ -29,7 +29,7 @@
   name: "上海交通大学, 元知机器人研究院",
   location: "上海市",
   date: "2023年10月 - 至今",
-  [用 Taichi 语言编写#link("https://github.com/julyfun/PlasticBag")[MPM 塑料袋物理仿真]，准备部署并用于 Garment manipulation model 的基准测试。仿真领域当前并没有塑料袋这种材料的相关研究，因此本人结合了 APIC 算法和褶皱模型，能让塑料袋呈现出其特殊的弹塑性和不规律的折痕],
+  [用 Taichi 语言编写#link("https://github.com/julyfun/PlasticBag")[MPM 塑料袋物理仿真]，准备部署并用于 Garment manipulation model 的基准测试。仿真领域当前并没有塑料袋这种材料的相关研究，因此本人结合 APIC 算法和褶皱模型，能让塑料袋呈现出其特殊的弹塑性和不规律的折痕],
   [魔改 #link("https://clothfunnels.cs.columbia.edu/")[Cloth Funnels] （斯坦福的 Garment manipulation model）的输入输出层，并使得实验室的 Manipulation 框架能够轻松适配该项目],
   [学会批量搭建 Docker + MinIO + MongoDB + RabbitMQ 分布式数据库框架，以使大量不同机器生产的数据集得到统一管理],
 )
@@ -57,7 +57,7 @@
 #resume_heading("项目经历")
 #project_item(
   name: [#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[rm.cv.std]],
-  skills: "C++, Python, Cuda, Docker, ROS, OpenCV, Flask ~25k loc.",
+  skills: "C++, Python, Cuda, Docker, ROS, OpenCV, Flask ~20k loc.",
   date: "2021年9月 - 至今",
   [在 RoboMaster 比赛中使用的自瞄系统，由往届项目重构，是战队夺得2023年全国赛总冠军的重要技术之一],
   [魔改 Yolov5 输出层为四点模型，调用学校 GPU 集群训练和导出模型，使用 TensorRT 在 MiniPC 上加速神经网络推理，识别敌人的帧率 $>= 200$ 帧，且在拖影长、曝光问题以及目标速度快等条件下也能较好识别],
@@ -72,7 +72,7 @@
 )
 #project_item(
   name: [#link("https://github.com/julyfun/mfa.fish")[mfa.fish]],
-  skills: "Shell ~500 loc",
+  skills: "Shell ~500 loc.",
   date: "2023年7月 - 至今",
   [与同学合作完成的命令行工具，使用 Fish shell 编写，实现快速查找文本内容，初始化特定语言项目，对小项目的 git 命令组合，简单的跨机器拷贝文本，用户友好的命令行提示等功能，提高了命令行使用效率]
 )
