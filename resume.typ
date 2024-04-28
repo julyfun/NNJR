@@ -78,7 +78,7 @@
 )
 #project_item(
   name: [#link("https://github.com/julyfun/how-to")[how-to]],
-  skills: "Unix-cli, Markdown, etc. ~4k loc.",
+  skills: "Shell, etc. ~4k loc.",
   date: "2023年6月 - 至今",
   [遵循特定规范编写各种工具的使用文档，结合 fzf，mfa.fish 等工具快速检索，非常有助于软硬件、网络、OS、环境、框架和工具问题的复现和解决],
 )
@@ -92,11 +92,23 @@
   [在课程要求之外，采用步进法检测鼠标与 SDF 几何体之间的碰撞并支持物体交互，#link("https://github.com/julyfun/games103-lab2")[仓库]和#link("https://www.bilibili.com/video/BV1Zw411n7eA")[演示链接]，以及基于三角元的碰撞检测和处理，引入八叉树算法划分空间，大幅优化了碰撞检测效率]
 )
 #project_item(
-  name: [#link("https://github.com/julyfun/ics-pa")[ics-pa]],
-  skills: "C ~2k loc.",
-  date: "2023年6月 - 2023年7月",
-  [南京大学操作系统课程 PA，编写模拟图灵机的 CPU、内存、x86_64 寄存器、PC、加法器，熟悉调试器解析命令，单步执行，扫描寄存器和内存的源码，并在调试器中添加词法分析、表达式求值和监视点功能]
+  name: [#link("https://github.com/julyfun/r0")[r0]],
+  skills: "Rust ~2k loc.",
+  date: "2024年3月 - 2024年4月",
+  [编译到 x86_64 平台的函数式语言简单编译器]
 )
+#project_item(
+  name: [#link("https://github.com/julyfun/ds-proj1")[ds-proj]],
+  skills: "C++ ~1.5k loc.",
+  date: "2024年4月",
+  [无参考代码从头编写的模板红黑树 map，特点是重新思考了 Zig-Zag 的写法使之比大多数网上写法减少了一半核心代码量且数学上等价，并利用 Iterator 适配了 C++17 STL]
+)
+// #project_item(
+//   name: [#link("https://github.com/julyfun/ics-pa")[ics-pa]],
+//   skills: "C ~2k loc.",
+//   date: "2023年6月 - 2023年7月",
+//   [南京大学操作系统课程 PA，编写模拟图灵机的 CPU、内存、x86_64 寄存器、PC、加法器，熟悉调试器解析命令，单步执行，扫描寄存器和内存的源码，并在调试器中添加词法分析、表达式求值和监视点功能]
+// )
 // #project_item(
 //   name: [#link("https://github.com/julyfun/d2l-ai")[d2l-ai]],
 //   skills: "Python, Pytorch",
