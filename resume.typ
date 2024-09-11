@@ -25,6 +25,15 @@
 
 #resume_heading[实习经历]
 #exp_item(
+  role: "软件开发实习生",
+  name: "上海舞肌科技有限公司",
+  location: "上海市",
+  date: "2024年6月 - 2024年8月",
+  [基于 HTC VIVE Tracker 和遨博机械臂，在 ROS2 框架下搭建了六轴机械臂低延迟遥操作系统 #link("https://github.com/julyfun/moveit2_aubo")[fast_control]],
+  [使用独自编写的在线插补算法，能以理论最快的速度追踪手臂姿态，同时进行碰撞检测和碰撞规避],
+  [各模块解耦，使之能轻松适配其他任意形态传感器和机械臂],
+)
+#exp_item(
   role: "本科生研究助理",
   name: "上海交通大学, 元知机器人研究院",
   location: "上海市",
@@ -59,10 +68,11 @@
   name: [#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[rm.cv.std]],
   skills: "C++, Python, Cuda, Docker, ROS, OpenCV, Flask ~20k loc.",
   date: "2021年9月 - 至今",
-  [在 RoboMaster 比赛中使用的自瞄系统，由往届项目重构，是战队夺得2023年全国赛总冠军的重要技术之一],
-  [魔改 Yolov5 输出层为四点模型，调用学校 GPU 集群训练和导出模型，使用 TensorRT 在 MiniPC 上加速神经网络推理，识别敌人的帧率 $>= 200$ 帧，且在拖影长、曝光问题以及目标速度快等条件下也能较好识别],
-  [基于 OpenCV 和 Eigen 的传统视觉轮廓提取、几何约束、图像滤波和特征点匹配，手搓 C++ 坐标变换器、EKF、梯度下降等底层数学库，将敌方机器人姿态等最优化问题转换为凸优化问题并设计求解方法，可能是首次解决比赛中困扰所有队伍视觉组多年的反陀螺建模难题],
+  [在 RoboMaster 比赛中使用的自瞄系统，是战队夺得2023年全国赛总冠军的重要技术之一],
+  [剪枝 Yolov5，魔改输出层，调用学校 GPU 集群训练和导出模型，使用 TensorRT 在 MiniPC 上加速神经网络推理，识别对方机器人的帧率 $>= 200$ 帧，在拖影长、曝光失常以及目标速度快等条件下也能较好识别],
+  [基于 OpenCV 和 Eigen 的传统视觉轮廓提取、几何约束、图像滤波和特征点匹配，手搓 C++ 坐标变换器、EKF、梯度下降等底层数学库，将敌方机器人姿态等最优化问题转换为凸优化问题并设计求解方法，可能是首次解决比赛中困扰所有队伍视觉组多年的运动建模难题],
   [使用 Pybind11 和 Flask 构建了简单的前端可视化 Debugger 和运行时调参 API，让大小朋友调试算法的效率得到很大提升],
+  [追求优雅的框架，框架多次迭代和重构],
 )
 #project_item(
   name: [#link("https://github.com/julyfun/PlasticBag")[PlasticBag]],
@@ -71,16 +81,16 @@
   [用 Taichi-lang 编写的高性能弹塑体仿真，实现基于混合欧拉 - 拉格朗日的 3D 弹塑体模拟，使用 MPM-APIC + 褶皱模型算法，简化碰撞/密度/概率的计算方式，同时在计算 Bending 能量时引入 Bending rest angle 在弹性限度外连锁突变，实现良好的塑性折痕效果]
 )
 #project_item(
-  name: [#link("https://github.com/julyfun/mfa.fish")[mfa.fish]],
-  skills: "Shell ~500 loc.",
+  name: [#link("https://github.com/julyfun/jst.fish")[jst.fish]],
+  skills: "Shell ~1k loc.",
   date: "2023年7月 - 至今",
   [与同学合作完成的命令行工具，使用 Fish shell 编写，实现快速查找文本内容，初始化特定语言项目，对小项目的 git 命令组合，简单的跨机器拷贝文本，用户友好的命令行提示等功能，提高了命令行使用效率]
 )
 #project_item(
-  name: [#link("https://github.com/julyfun/how-to")[how-to]],
+  name: [#link("https://how-to.fun")[how-to]],
   skills: "Shell, etc. ~4k loc.",
   date: "2023年6月 - 至今",
-  [遵循特定规范编写各种工具的使用文档，结合 fzf，mfa.fish 等工具快速检索，非常有助于软硬件、网络、OS、环境、框架和工具问题的复现和解决],
+  [遵循特定规范编写各种工具的使用文档，非常有助于软硬件、网络、OS、环境、框架和工具问题的复现和解决],
 )
 
 // 以下是没什么复用可能的东西
@@ -95,14 +105,14 @@
   name: [#link("https://github.com/julyfun/r0")[r0]],
   skills: "Rust ~2k loc.",
   date: "2024年3月 - 2024年4月",
-  [编译到 x86_64 平台的函数式语言简单编译器]
+  [编译到 x86_64 平台的函数式语言编译器]
 )
-#project_item(
-  name: [#link("https://github.com/julyfun/ds-proj1")[ds-proj]],
-  skills: "C++ ~1.5k loc.",
-  date: "2024年4月",
-  [无参考代码从头编写的模板红黑树 map，特点是重新思考了 Zig-Zag 的写法使之比大多数网上写法减少了一半核心代码量且数学上等价，并利用 Iterator 适配了 C++17 STL]
-)
+// #project_item(
+//   name: [#link("https://github.com/julyfun/ds-proj1")[ds-proj]],
+//   skills: "C++ ~1.5k loc.",
+//   date: "2024年4月",
+//   [无参考代码从头编写的模板红黑树 map，特点是重新思考了 Zig-Zag 的写法使之比大多数网上写法减少了一半核心代码量且数学上等价，并利用 Iterator 适配了 C++17 STL]
+// )
 // #project_item(
 //   name: [#link("https://github.com/julyfun/ics-pa")[ics-pa]],
 //   skills: "C ~2k loc.",
