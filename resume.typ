@@ -9,7 +9,7 @@
 )
 
 #header(
-  name: "Fang Junjie",
+  name: "Junjie Fang",
   phone: "(+86) 15356160627",
   email: "julyfun.collect@outlook.com",
   site: "github.com/julyfun",
@@ -18,49 +18,59 @@
 #resume_heading[教育背景]
 #edu_item(
   name: "上海交通大学",
-  degree: "信息工程, GPA 3.82 / 4.30, Ranking 12 / 33",
+  degree: [*信息工程*, GPA 3.89 / 4.30, Ranking 6 / 33\ 专业课程：程序与算法分析 (97), 数据结构(95), 机器学习(92), 数据库系统(93), 计算机网络(91), 高等数学(96), 概率论与统计(94), 高等电子学(96), 数字信号处理	(98), 最优化理论(87), 编程语言理论(89), 图论与计算代数(89)],
   location: "上海市",
-  date: "2021年9月 - 至今"
+  date: "2021年9月 - 2025年6月"
+)
+
+#edu_item(
+  name: "上海交通大学",
+  degree: [*电子信息（研究生）*],
+  location: "上海市",
+  date: "2025年6月 - 至今"
 )
 
 #resume_heading[实习经历]
+
 #exp_item(
   role: "软件开发实习生",
   name: "上海舞肌科技有限公司",
   location: "上海市",
   date: "2024年6月 - 2024年8月",
   [基于 HTC VIVE Tracker 和遨博机械臂，在 ROS2 框架下搭建了六轴机械臂低延迟遥操作系统 #link("https://github.com/julyfun/moveit2_aubo")[fast_control]],
-  [使用独自编写的在线插补算法，能以理论最快的速度追踪手臂姿态，同时进行碰撞检测和碰撞规避],
-  [各模块解耦，使之能轻松适配其他任意形态传感器和机械臂],
+  [提出 Online Interpolation 算法，能在加速度和急动度限制下以理论最快的速度追踪手臂姿态，同时规避物体碰撞和自碰撞],
+  [各模块解耦，使这套系统能轻松适配任意形态传感器和机械臂],
 )
+
 #exp_item(
   role: "本科生研究助理",
   name: "上海交通大学, 元知机器人研究院",
   location: "上海市",
   date: "2023年10月 - 至今",
-  [用 Taichi 语言编写#link("https://github.com/julyfun/PlasticBag")[MPM 塑料袋物理仿真]，准备部署并用于 Garment manipulation model 的基准测试。仿真领域当前并没有塑料袋这种材料的相关研究，因此本人结合 APIC 算法和褶皱模型，能让塑料袋呈现出其特殊的弹塑性和不规律的折痕],
-  [魔改 #link("https://clothfunnels.cs.columbia.edu/")[Cloth Funnels] （斯坦福的 Garment manipulation model）的输入输出层，并使得实验室的 Manipulation 框架能够轻松适配该项目],
-  [学会批量搭建 Docker + MinIO + MongoDB + RabbitMQ 分布式数据库框架，以使大量不同机器生产的数据集得到统一管理],
+  [学习修改 #link("https://clothfunnels.cs.columbia.edu/")[Cloth Funnels] （斯坦福的 Garment manipulation model）的网络架构，使其适配特定的机器学习框架],
+  [学习批量搭建 Docker + MinIO + MongoDB + RabbitMQ 分布式数据库框架，以使大量不同机器生产的数据集得到统一管理],
+  [提出一种带权重的遥操作运动学逆解和重映射方法，使得灵巧手/机械臂遥操作更灵活，延迟更低],
 )
-// 没有网格算粒子之间相互作用就只能用粒子搜索粒子附近的粒子去计算碰撞/密度/概率来进行，这样会引起很多问题，比如粒子临域搜索就很麻烦
-// https://www.cnblogs.com/FlyingZiming/p/14459174.html#mpm
+
+#exp_item(
+  role: "信息学竞赛主教练",
+  name: "上海交通大学附属中学闵行分校 | 勰码教育 | 翊码蔚来",
+  location: "上海市",
+  date: "2022年10月 - 至今",
+  [带队参加 2023、2024 年 CSP-S 和 NOIP，零基础队员也获得了上海省一、省二（20+人次）等多个提高组奖项],
+  [设计和讲授零基础、普及组、提高组的#link("https://docs.qq.com/sheet/DWHF6clRmQmlKUUFw")[C++ 信奥培训课程]，编写教案 PPT，组织 NOIP 模拟赛，同时撰写#link("https://www.luogu.com.cn/article/8ijh5m4r")[算法题解]，代码可读性强，注释清晰，在洛谷共获 7000+ 点赞和 1300+ 评论],
+  [为 USACO 铜级、银级和铂金级学生一对一授课，内容涵盖 Java, Python, C++ 各级算法知识点，所有学员均成功晋级],
+  [线上和线下课程、一对多和一对一课程均有多个学期经验，讲课风格宽松，注重互动，常受小朋友和家长好评],
+)
 
 #exp_item(
   role: "机器人视觉部部长",
   name: "上海交通大学, 交龙机器人战队",
   location: "上海市",
   date: "2021年9月 - 2023年8月",
-  [无官方平台，自主构建目标追踪系统，实现对敌方机器人的全自动发弹打击（自瞄挂），识别器魔改自 Yolov5，预测器使用 OpenCV, Eigen 和 Ceres 手搓 C++17 代码，在比赛中的优势是独创使用扩展卡尔曼滤波器构建了敌方机器人的运动方程，以及构造了良好解耦的打击策略代码和#link("https://sjtu-robomaster-team.github.io/antitop/")[弹道闭环算法]，在2023年 RoboMaster 全国赛中，本战队依赖该自瞄系统获得了所有高校队伍中的最高命中率（官方统计），并在大疆青年工程师大会上#link("https://www.bilibili.com/video/BV1vX4y1W7U7")[展示]，#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[项目开源分支]在 GitHub 上获得 300+ stars。个人代码量 $>= 20000$ 行],
   [进行 MiniPC、陀螺仪板、工业相机和双目相机等视觉硬件的走线、驱动、标定和调试，重新设计选型和线路 + 优化 Debugger，让硬件系统在频繁冲撞的赛场上性能稳定，不掉线],
-  [开发详细的#link("https://sjtu-robomaster-team.github.io")[机器视觉教程]，该系列教程有数万浏览量，且经常在比赛圈子内被引用]
-)
-#exp_item(
-  role: "信息学竞赛主教练",
-  name: "上海交通大学附属中学闵行分校",
-  location: "上海市",
-  date: "2022年10月 - 至今",
-  [自行设计和讲授从零基础直通提高组的#link("https://docs.qq.com/sheet/DWHF6clRmQmlKUUFw")[信奥培训课程]，组织 NOIP 模拟赛，同时撰写#link("https://www.luogu.com.cn/article/8ijh5m4r")[算法题解]，在洛谷共获 6000+ 点赞和 1200+ 评论],
-  [带队参加 2023年 CSP-S 和 NOIP，零基础队员也获得了多个提高组奖项]
+  [无官方平台，自主构建目标追踪系统，实现对敌方机器人的全自动打击，在比赛中的优势是独创使用扩展卡尔曼滤波器构建了敌方机器人的运动方程，以及构造了良好解耦的打击策略代码和#link("https://sjtu-robomaster-team.github.io/antitop/")[弹道闭环算法]，在2023年 RoboMaster 全国赛中，本战队依赖该自瞄系统获得了所有高校队伍中的最高命中率（官方统计），并在大疆青年工程师大会上#link("https://www.bilibili.com/video/BV1vX4y1W7U7")[展示]，#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[项目开源分支]在 GitHub 上获得 300+ stars。个人代码量 $>= 20000$ 行],
+  [开发详细的#link("https://sjtu-robomaster-team.github.io")[机器视觉教程]，获得超过 6 万浏览量]
 )
 
 #resume_heading("项目经历")
@@ -68,29 +78,30 @@
   name: [#link("https://github.com/Harry-hhj/CVRM2021-sjtu")[rm.cv.std]],
   skills: "C++, Python, Cuda, Docker, ROS, OpenCV, Flask ~20k loc.",
   date: "2021年9月 - 至今",
-  [在 RoboMaster 比赛中使用的自瞄系统，是战队夺得2023年全国赛总冠军的重要技术之一],
-  [剪枝 Yolov5，魔改输出层，调用学校 GPU 集群训练和导出模型，使用 TensorRT 在 MiniPC 上加速神经网络推理，识别对方机器人的帧率 $>= 200$ 帧，在拖影长、曝光失常以及目标速度快等条件下也能较好识别],
+  [在 RoboMaster 比赛中使用的自瞄系统，是战队夺得2023、2024年全国赛总冠军的重要技术之一],
+  [调整 Yolo 输出层和损失函数使其适配比赛中的矩形、数字等小目标，使用 TensorRT 在 MiniPC 上加速神经网络推理，识别对方机器人的帧率 $>= 200$ 帧，在拖影长、曝光失常以及目标速度快等条件下也能较好识别],
   [基于 OpenCV 和 Eigen 的传统视觉轮廓提取、几何约束、图像滤波和特征点匹配，手搓 C++ 坐标变换器、EKF、梯度下降等底层数学库，将敌方机器人姿态等最优化问题转换为凸优化问题并设计求解方法，可能是首次解决比赛中困扰所有队伍视觉组多年的运动建模难题],
   [使用 Pybind11 和 Flask 构建了简单的前端可视化 Debugger 和运行时调参 API，让大小朋友调试算法的效率得到很大提升],
-  [追求优雅的框架，框架多次迭代和重构],
+  [追求优雅的工程框架与风格，框架多次迭代和重构],
 )
 #project_item(
-  name: [#link("https://github.com/julyfun/PlasticBag")[PlasticBag]],
-  skills: "Python, Taichi, Cuda ~2.5k loc.",
-  date: "2023年12月 - 至今",
-  [用 Taichi-lang 编写的高性能弹塑体仿真，实现基于混合欧拉 - 拉格朗日的 3D 弹塑体模拟，使用 MPM-APIC + 褶皱模型算法，简化碰撞/密度/概率的计算方式，同时在计算 Bending 能量时引入 Bending rest angle 在弹性限度外连锁突变，实现良好的塑性折痕效果]
+  name: [#link("https://github.com/julyfun?page=2&tab=repositories")[waveshare-realsense-smart-robot]],
+  skills: "Python ~5k loc.",
+  date: "2024年9月 - 2024年12月",
+  [基于 3D Diffusion policy 搭建的 Loco-Manipulation system，通过建立 task-specific loss function 来执行多阶段抓取任务。我们提出将机器人底盘控制的目标设定为夹爪末端姿态而不是机械臂的基坐标，从而实现了与抓取策略解耦的整体移动控制，可以在不同 Policy 之间直接切换。]
 )
+
 #project_item(
   name: [#link("https://github.com/julyfun/jst.fish")[jst.fish]],
-  skills: "Shell ~1k loc.",
+  skills: "Shell ~2k loc.",
   date: "2023年7月 - 至今",
-  [与同学合作完成的命令行工具，使用 Fish shell 编写，实现快速查找文本内容，初始化特定语言项目，对小项目的 git 命令组合，简单的跨机器拷贝文本，用户友好的命令行提示等功能，提高了命令行使用效率]
+  [与同学合作完成的命令行工具，使用 Fish shell 编写，实现快速 grep，Git 项目管理，特定语言项目配置，简单的跨机器文件传输，用户友好的命令行提示等功能，提高了命令行使用效率]
 )
 #project_item(
   name: [#link("https://how-to.fun")[how-to]],
-  skills: "Shell, etc. ~4k loc.",
+  skills: "Shell, etc. ~30k loc.",
   date: "2023年6月 - 至今",
-  [遵循特定规范编写各种工具的使用文档，非常有助于软硬件、网络、OS、环境、框架和工具问题的复现和解决],
+  [遵循特定规范编写各种工具的使用文档和使用经验，有助于软硬件、网络、OS、环境、框架和工具问题的复现和解决],
 )
 
 // 以下是没什么复用可能的东西
@@ -160,26 +171,26 @@
 )
 #award_item(
   name: "全国青少年信息学奥林匹克联赛提高组 (NOIP) 浙江",
-  price: "一等奖",
+  price: "一等奖 (460 / 600)",
   date: "2018年11月"
 )
 
 #resume_heading("技能和兴趣")
 #skill_item(
   category: "编程语言",
-  skills: "C++，Python, C 较为熟练; SQL (Postgres), JavaScript, Java, Matlab, Rust, Zig 写过一些课程 Lab 或玩具项目"
+  skills: "C++，Python, C, Rust, Swift, SQL, JavaScript, Java, Matlab, Zig"
 )
 #skill_item(
-  category: "框架和库",
-  skills: "ROS 1 & 2, OpenCV, Taichi, Unity, Cuda 使用较多; Pytorch, Tensorrt, React, Vue, Node.js, Bun, Flask, FastAPI, MinIO, MongoDB 有所涉猎"
+  category: "软件框架",
+  skills: "Git, Unity, Flask, FastAPI, MinIO, MongoDB"
 )
 #skill_item(
-  category: "开发者工具",
-  skills: "Git, Docker, Github CI, Neovim"
+  category: "机器人框架",
+  skills: "ROS/ROS2, Gazebo, Rerun"
 )
 #skill_item(
-  category: "兴趣方向",
-  skills: "机器学习，AI；机器视觉，导航和路径规划；编程语言，编译器，高性能计算，操作系统；软件开发，UI 前端可视化，搜索推荐及算法"
+  category: "科学计算",
+  skills: "Taichi, Pytorch, Tensorrt"
 )
 
 // #resume_heading("个人陈述")
